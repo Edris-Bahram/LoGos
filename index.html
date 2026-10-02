@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoGoS | لوگوس — مقالاتی در فلسفه، جامعه‌شناسی و تکنولوژی</title>
+  <meta name="description" content="LoGoS؛ مقالاتی در فلسفه، جامعه‌شناسی و تکنولوژی.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.dataset.theme = localStorage.getItem("logos-theme") || "dark";</script>
+</head>
+<body data-page="home">
+  <div id="site-nav"></div>
+
+  <main>
+    <!-- هدر + جملات فیلسوفان -->
+    <header class="hero">
+      <svg class="hero-orbit" viewBox="0 0 400 400" fill="none" stroke="currentColor" aria-hidden="true">
+        <circle cx="200" cy="200" r="190" stroke-width=".6"/>
+        <circle cx="200" cy="200" r="190" stroke-width="5" stroke-dasharray=".6 15.9" opacity=".6"/>
+        <circle cx="200" cy="200" r="150" stroke-width=".6" stroke-dasharray="2 8"/>
+        <circle cx="200" cy="200" r="110" stroke-width=".6"/>
+        <circle cx="390" cy="200" r="4" fill="currentColor" stroke="none"/>
+        <circle cx="200" cy="50" r="3" fill="currentColor" stroke="none"/>
+        <circle cx="94" cy="306" r="3" fill="currentColor" stroke="none"/>
+      </svg>
+
+      <div class="hero-inner">
+        <div class="hero-logo" data-logo></div>
+        <h1 class="en">LoGoS</h1>
+        <p class="hero-greek en" lang="el">λόγος</p>
+        <p class="hero-sub">مقالاتی در فلسفه، جامعه‌شناسی و تکنولوژی</p>
+
+        <figure class="quote" id="quote">
+          <blockquote id="quote-text"></blockquote>
+          <figcaption id="quote-by"></figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <!-- آخرین مقالات -->
+    <section class="section" aria-labelledby="latest-title">
+      <div class="section-head">
+        <h2 class="section-title" id="latest-title">آخرین مقالات</h2>
+        <div class="slider-controls">
+          <button class="icon-btn" id="slide-prev" type="button" aria-label="مقالهٔ قبلی"><i class="fa-solid fa-chevron-right"></i></button>
+          <button class="icon-btn" id="slide-next" type="button" aria-label="مقالهٔ بعدی"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+      </div>
+      <div class="track" id="latest-track" tabindex="0" aria-label="آخرین مقالات"></div>
+    </section>
+
+    <!-- فیلسوفان بزرگ -->
+    <section class="band" aria-labelledby="phil-title">
+      <div class="section">
+        <div class="section-head">
+          <h2 class="section-title" id="phil-title">فیلسوفان بزرگ</h2>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/articles-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
